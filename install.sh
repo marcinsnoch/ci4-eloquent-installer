@@ -16,8 +16,8 @@ composer require illuminate/database --working-dir="$CI4_PATH"
 # 2. Kopiowanie plików
 echo "📂 Kopiuję pliki konfiguracyjne i przykładowe..."
 cp -r src/Config/* "$CI4_PATH/app/Config/"
-cp -r src/Controllers/HomeController.php "$CI4_PATH/app/Controllers/"
-cp -r src/Models/UserModel.php "$CI4_PATH/app/Models/"
+cp -r src/Controllers/* "$CI4_PATH/app/Controllers/"
+cp -r src/Models/* "$CI4_PATH/app/Models/"
 
 # 3. Add to GIT
 cd $CI4_PATH
